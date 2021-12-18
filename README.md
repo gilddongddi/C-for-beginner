@@ -67,4 +67,4 @@ printf("Hello World!");
 [네이버](http://www.naver.com, "네이버사이트")
 
 
-![이미지 올리기](http://www.tcpschool.com/lectures/img_php_bitwise_and.png)
+![이미지 올리기](images/prod1.png)
