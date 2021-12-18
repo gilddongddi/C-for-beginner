@@ -56,8 +56,8 @@ printf("Hello World!");
     -   순서 없는 목록
           - unorder list
           - order list
--   Unorder List
--   Order List
+            -   Unorder List
+            -   Order List
 - It's nice.
 
 
