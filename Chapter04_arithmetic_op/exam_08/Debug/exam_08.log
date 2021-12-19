@@ -1,0 +1,6 @@
+﻿  exam_08.c
+D:\Documents\c_Beginner\Chapter04_arithmetic_op\exam_08\exam_08.c(29,24): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Documents\c_Beginner\Chapter04_arithmetic_op\exam_08\exam_08.c(30,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'double'입니다.
+D:\Documents\c_Beginner\Chapter04_arithmetic_op\exam_08\exam_08.c(13,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\c_Beginner\Chapter04_arithmetic_op\exam_08\exam_08.c(15,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  exam_08.vcxproj -> D:\Documents\c_Beginner\Chapter04_arithmetic_op\exam_08\Debug\exam_08.exe
