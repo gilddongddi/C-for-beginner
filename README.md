@@ -1,6 +1,8 @@
-# C 언어 ## c언어 ### c언어 #### c언어 ###### c언어
+C 언어
 
-# c 언어
+# c 언어 ##### for ### Beginner
+
+
 
 ## for Beginner 
 
