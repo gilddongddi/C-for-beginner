@@ -18,26 +18,27 @@ int main()
 	printf("두 번째 수를 입력하세요 : ");
 	scanf("%d", &b);
 
-	if (op ==  "+")
+	if (op ==  '+')
 	{
 		printf("%d + %d = %d \n", a, b, a + b);
 	}
-	if (op == "-")
+	if (op == '-')
 	{
 		printf("%d - %d = %d \n", a, b, a - b);
 	}
-	if (op == "*")
+	if (op == '*')
 	{
 		printf("%d * %d = %d \n", a, b, a * b);
 	}
-	if (op == "/")
+	if (op == '/')
 	{
 		printf("%d / %d = %f \n", a, b, a / (float)b);
 	}
-	if (op == "%")
+	if (op == '%')
 	{
 		printf("%d %% %d = %d \n", a, b, a % b);
 	}
 }
 
-// 두 개의 숫자와 연산자를 입력받은 후 결과가 프린트되지 않고 종료된다. 왜 그럴까?
+// 두 개의 숫자와 연산자를 입력받은 후 결과가 프린트되지 않고 종료된다. 왜 그럴까? 
+// 해결: if문에서 문자를 받을 때 "" 가 아닌 ''로 받아야 함
