@@ -1,0 +1,3 @@
+﻿  for_2.c
+D:\Documents\c_Beginner\Chapter06_Iteration_for\for_2\for_2.c(120,6): warning C4101: 'result' :참조되지 않은 지역 변수입니다.
+  for_2.vcxproj -> D:\Documents\c_Beginner\Chapter06_Iteration_for\for_2\Debug\for_2.exe

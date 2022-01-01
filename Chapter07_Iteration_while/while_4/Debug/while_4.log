@@ -1,0 +1,3 @@
+﻿  while_4_do_while.c
+D:\Documents\c_Beginner\Chapter06_Iteration_for\while_4\while_4_do_while.c(35,10): warning C4102: 'dedault': 참조되지 않은 레이블입니다.
+  while_4.vcxproj -> D:\Documents\c_Beginner\Chapter06_Iteration_for\while_4\Debug\while_4.exe
