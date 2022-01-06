@@ -100,26 +100,53 @@
 
 
 // 응용 11-11 도스 명령어 copy 구현
+//#include<stdio.h>
+//
+//void main()
+//{
+//	char str[200];
+//	FILE* rfp;
+//	FILE* wfp;
+//
+//	rfp = fopen("c:\\windows\\win.ini", "r");
+//	wfp = fopen("c:\\users\\user\\documents\\c-for-beginner\\temp\\data5.txt", "w");
+//
+//	for (;;)
+//	{
+//		fgets(str, 200, rfp);
+//
+//		if (feof(rfp))
+//			break;
+//		fputs(str, wfp);
+//	}
+//
+//	fclose(rfp);
+//	fclose(wfp);
+//}
+
+
+
+
+// 기본 11-12 서식을 지정하여 파일 출력 : fprintf()
+
 #include<stdio.h>
 
 void main()
 {
-	char str[200];
-	FILE* rfp;
 	FILE* wfp;
+	int hap = 0;
+	int in, i;
 
-	rfp = fopen("c:\\windows\\win.ini", "r");
-	wfp = fopen("c:\\users\\user\\documents\\c-for-beginner\\temp\\data5.txt", "w");
+	wfp = fopen("C:\\users\\user\\documents\\c-for-beginner\\temp\\data7.txt", "w");
 
-	for (;;)
+	for (i = 0; i < 5; i++)
 	{
-		fgets(str, 200, rfp);
+		printf(" 숫자 %d : ", i + 1);
+		scanf_s("%d", &in);
+		hap = hap + in;					// 숫자 5개를 입력받아서 더한 값을 hap에 저장
 
-		if (feof(rfp))
-			break;
-		fputs(str, wfp);
 	}
+	fprintf(wfp, "합계 ==> : %d\n", hap);	// hap의 값만 data7.txt 파일에 쓰기
 
-	fclose(rfp);
 	fclose(wfp);
 }
