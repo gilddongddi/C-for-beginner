@@ -10,7 +10,7 @@
 
 
 > C언어 for Beginner 개정3판 -우재남, 한빛아카데미
-<img src ="images/c_for_beginner.png" width="400" height="auto">
+<img src ="c_for_beginner.png" width="400" height="auto">
 
 
 
