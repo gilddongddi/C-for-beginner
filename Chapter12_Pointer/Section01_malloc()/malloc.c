@@ -1,6 +1,61 @@
 // SECTION 01 메모리 할당 함수
 
 
+// 기본 12-1 포인터를 사용하여 정수 합계 구하기
+
+//#include<stdio.h>
+//
+//int main()
+//{
+//	int aa[3];
+//	int* p;
+//	int i, hap = 0;
+//
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf(" %d 번째 숫자 : ", i + 1);
+//		scanf("%d", &aa[i]);
+//	}
+//
+//	p = aa;
+//
+//	for (i = 0; i < 3; i++)
+//		hap = hap + *(p + i);
+//
+//	printf("입력 숫자의 합 => %d\n", hap);
+//}
+
+
+
+
+//기본 12-2 고정된 크기의 배열로 인한 메모리 낭비의 예
+
+//#include<stdio.h>
+//int main()
+//{
+//	int aa[10000];
+//	int* p;
+//	int i, hap = 0;
+//	int cnt;
+//
+//	printf(" 입력할 개수는 ? ");
+//	scanf("%d", &cnt);
+//
+//	for (i = 0; i < cnt; i++)
+//	{
+//		printf("%d 번째 숫자 : ", i + 1);
+//		scanf("%d", &aa[i]);
+//	}
+//
+//	p = aa;
+//
+//	for (i = 0; i < cnt; i++)
+//	{
+//		hap = hap + *(p + i);
+//	}
+//
+//	printf("입력 숫자의 합 ==> %d\n", hap);
+//}
 
 
 // malloc() 함수 사용형식 :  포인터 변수 = (포인터 변수의 데이터타입*) malloc(포인터 변수의 데이터형 크기 x 필요한 크기)
