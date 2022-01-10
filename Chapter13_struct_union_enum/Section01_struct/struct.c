@@ -92,7 +92,82 @@
 
 
 // SELF STUDY : 구조체에 초깃값 대입하는 방식
+//#include<stdio.h>
+//
+//int main()
+//{
+//	struct student {
+//		char name[10];
+//		int kor;
+//		int eng;
+//		float avg;
+//	};
+//
+//	struct student s = { "CM.Bae", 90, 95 };
+//
+//	printf("이름 : ");
+//
+//	printf("국어 점수 : ");
+//
+//	printf("영어 점수 : ");
+//
+//	s.avg = (s.kor + s.eng) / 2.0f;
+//
+//	printf("\n---구조체 활용 ---\n");
+//	printf("학생 이름 ==> %s\n", s.name);
+//	printf("영어 점수 ==> %d\n", s.eng);
+//	printf("국어 점수 ==> %d\n", s.kor);
+//	printf("평균 점수 ==> %5.1f\n", s.avg);
+//}
+
+
+
+
+// 구조체 배열
+// 
+// 기본 13-4, 구조체 배열을 사용하지 않은 예 - 일반 배열
+//#include<stdio.h>
+//#include<string.h>
+//
+//int main()
+//{
+//	char name[3][10];
+//	int kor[3];
+//	int eng[3];
+//	float avg[3];
+//
+//	int i;
+//
+//	strcpy(name[0], "Kim");
+//	kor[0] = 90;
+//	eng[0] = 80;
+//	avg[0] = (kor[0] + eng[0]) / 2.0f;
+//
+//	strcpy(name[1], "Lee");
+//	kor[1] = 70;
+//	eng[1] = 60;
+//	avg[1] = (kor[1] + eng[1]) / 2.0f;
+//
+//	strcpy(name[2], "Park");
+//	kor[2] = 50;
+//	eng[2] = 40;
+//	avg[2] = (kor[2] + eng[2]) / 2.0f;
+//
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("학생 이름 ==> %s\n", name[i]);
+//		printf("국어 점수 ==> %d\n", kor[i]);
+//		printf("영어 점수 ==> %d\n", eng[i]);
+//		printf("평균 점수 ==> %5.1f\n", avg[i]);
+//		printf("\n");
+//	}
+//}
+
+
+
+// ===> 응용 13-5, 구조체 배열을 사용하여 변경
 #include<stdio.h>
+#include<string.h>
 
 int main()
 {
@@ -103,21 +178,35 @@ int main()
 		float avg;
 	};
 
-	struct student s = { "CM.Bae", 90, 95 };
+	struct student s[3];
 
-	printf("이름 : ");
+	int i;
 
-	printf("국어 점수 : ");
+	strcpy(s[0].name, "Kim");
+	s[0].kor = 90;
+	s[0].eng = 80;
+	s[0].avg = (s[0].kor + s[0].eng) / 2.0f;
 
-	printf("영어 점수 : ");
+	strcpy(s[1].name, "Lee");
+	s[1].kor = 70;
+	s[1].eng = 80;
+	s[1].avg = (s[1].kor + s[1].eng) / 2.0f;
 
-	s.avg = (s.kor + s.eng) / 2.0f;
+	strcpy(s[2].name, "Park");
+	s[2].kor = 50;
+	s[2].eng = 40;
+	s[2].avg = (s[2].kor + s[2].eng) / 2.0f;
 
-	printf("\n---구조체 활용 ---\n");
-	printf("학생 이름 ==> %s\n", s.name);
-	printf("영어 점수 ==> %d\n", s.eng);
-	printf("국어 점수 ==> %d\n", s.kor);
-	printf("평균 점수 ==> %5.1f\n", s.avg);
+
+	printf("---구조체 배열 --\n");
+	for (i = 0; i < 3; i++)
+	{
+		printf("학생 이름 ==> %s\n", s[i].name);
+		printf("국어 점수 ==> %d\n", s[i].kor);
+		printf("영어 점수 ==> %d\n", s[i].eng);
+		printf("평균 점수 ==> %5.1f\n", s[i].avg);
+		printf("\n");
+	}
 }
 
 
