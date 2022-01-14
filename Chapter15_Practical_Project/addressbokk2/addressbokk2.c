@@ -29,7 +29,7 @@ int main()
 	while (select != 4)
 	{
 		print_menu();
-		select = getche();				// getch() : 문자 하나, 모니터에 표시
+		select = getche();				// getche() : 문자 하나, 모니터에 표시
 		getchar();						// getchar() : 엔터칠 때까지 입력한 데이터를 메모리(버퍼)에 저장, 한문자만 꺼냄
 		switch (select)
 		{
