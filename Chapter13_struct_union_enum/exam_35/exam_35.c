@@ -6,7 +6,7 @@
 
 int main()
 {
-	typedef struct _person {
+	typedef struct _person {				//구조체형을 정의할 때 그 내부에 공용체를 사용한다.
 		char name[10];
 		union _id {
 			char phone[15];

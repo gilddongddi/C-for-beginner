@@ -18,7 +18,7 @@ void add_juso();
 void delete_juso();
 
 //연락처 파일명을 전역변수로 고정.
-const char* fname = "C:\\Users\\user\\Documents\\C-for-beginner\\temp\\juso.txt";
+const char* fname = "D:\\Documents\\c_for_Beginner\\temp\\juso.txt";
 
 
 int main()
